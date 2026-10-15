@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — Fullmoon</title>
-<meta name="description" content="Privacy Policy for Fullmoon — Lunar Calendar &amp; Diary.">
+<title>Privacy Policy — Rằm</title>
+<meta name="description" content="Privacy Policy for Rằm — Lunar Calendar &amp; Diary.">
 <style>
   :root{
     --red:#A51D1D; --gold:#C9962B; --bg:#FBF3E6; --card:#FFFCF5;
@@ -83,47 +83,49 @@
       <circle cx="15.6" cy="16.4" r="2.1" fill="#A51D1D" opacity=".22"/>
       <circle cx="24" cy="23.4" r="2.8" fill="#A51D1D" opacity=".18"/>
     </svg>
-    <span class="brand">Fullmoon</span>
+    <span class="brand">Rằm</span>
   </div>
 
   <h1>Privacy Policy</h1>
 
   <p class="dates">
-    <b>Fullmoon — Lunar Calendar &amp; Diary</b><br>
-    Effective <b>8 October 2026</b> · Last updated <b>8 October 2026</b>
+    <b>Rằm — Lunar Calendar &amp; Diary</b><br>
+    Effective <b>15 October 2026</b> · Last updated <b>15 October 2026</b>
   </p>
 </header>
 
 <h2><span class="num">01</span>Summary</h2>
 <p class="lede">
-  Fullmoon has no accounts and no servers of its own, and it never sends your diary anywhere.
-  Everything you write stays on your device, encrypted.
+  Rằm has no accounts and no servers of its own. Everything you write stays on your device,
+  encrypted, and it leaves the device only if you choose to back it up, in a file that is
+  encrypted with your own password.
 </p>
 <div class="card">
   <ul class="tick">
     <li>No sign-up, no login, and we never collect your name or email address.</li>
-    <li>Your diary entries, photos and saved locations are <strong>never</strong> uploaded.</li>
+    <li>Your diary entries, photos and saved locations are <strong>never</strong> uploaded automatically. The only way they leave your device is a backup that <strong>you</strong> start, encrypted with a password only you know.</li>
     <li>We do not sell, rent or share your personal data with anyone.</li>
     <li>Diary content and photos are encrypted before being written to storage.</li>
-    <li>This version of the app contains <strong>no advertising and no in-app purchases</strong>.</li>
+    <li>The free version shows banner ads (provided by Google AdMob). Rằm Pro removes them and is bought through Google Play, so we never see your payment details.</li>
   </ul>
   <p style="margin-bottom:0; color:var(--muted); font-size:15.5px">
-    The only data that leaves your device is crash reports and anonymous usage statistics.
-    Section 05 covers both.
+    Besides backups you start yourself, the only data that leaves your device is crash reports,
+    anonymous usage statistics, advertising data and purchase status. Section 05 covers each.
   </p>
 </div>
 
 <h2><span class="num">02</span>What we do not collect</h2>
-<p>Fullmoon neither requests nor collects:</p>
+<p>Rằm neither requests nor collects:</p>
 <ul>
   <li>Your name, email, phone number, date of birth, or any identifying details.</li>
   <li>Your contacts, messages, call history, or system calendar.</li>
-  <li>What you write in your diary — we have no way to read it.</li>
+  <li>What you write in your diary — we have no way to read it, and no way to read your backups.</li>
   <li>Photos from your gallery, other than the ones you add to a diary entry yourself.</li>
 </ul>
 <p>
-  Because there are no accounts and no server storing content, we cannot view, back up
-  or restore your diary — even if you ask us to.
+  Because there are no accounts and no server of ours storing content, we cannot view, back up
+  or restore your diary — even if you ask us to. Backups are created and restored by you, and
+  they are encrypted so that only your password can open them.
 </p>
 
 <h2><span class="num">03</span>Data stored on your device</h2>
@@ -167,8 +169,45 @@
 <h3>Automatic backup is disabled</h3>
 <p>
   The app disables Android's automatic backup, because the encryption key is tied to the device
-  and is not included in backups — a restored copy could not be decrypted. As a consequence,
-  your existing diary does not carry over when you switch or reset devices.
+  and is not included in system backups — a restored copy could not be decrypted. As a consequence,
+  your diary does not carry over automatically when you switch or reset devices. Use the
+  app's own backup (next section) to move your diary to another device.
+</p>
+
+<h3>Backup and restore (started by you)</h3>
+<p>
+  In Settings you can export your diary entries and photos to a backup file, and import them
+  again later. Locations saved with entries are included. A backup is created only when you ask for it.
+</p>
+<ul>
+  <li>
+    <strong>Encrypted with your password.</strong> You choose a password of at least 8 characters.
+    The backup is encrypted with AES-256-GCM using a key derived from that password (PBKDF2-HMAC-SHA256).
+    The password is never stored and never sent anywhere.
+    <strong>If you forget it, nobody can open the backup, including us.</strong>
+  </li>
+  <li>
+    <strong>Save to a file.</strong> You choose where the file is saved. After that, the file is under your
+    control; keep it somewhere safe.
+  </li>
+  <li>
+    <strong>Save to Google Drive (optional).</strong> If you choose this, the app asks Google for permission
+    to use its own hidden app-data folder in your Google Drive (the <code>drive.appdata</code> scope).
+    With that permission the app can see only the backup file it created. It cannot see, read or change any
+    of your other Drive files. The file is encrypted on your device before it is uploaded, so Google stores
+    only an encrypted file. We never receive the file, your password or your Google account details,
+    and the upload goes directly from your device to Google. It uses your own Drive storage space.
+    Only the most recent Drive backup is kept; creating a new one replaces the previous one.
+  </li>
+  <li>
+    <strong>Restoring.</strong> Importing a backup adds only the days that are missing on your device.
+    A day that already has an entry is left unchanged.
+  </li>
+</ul>
+<p>
+  To remove the Drive backup, open Google Drive → Settings → Manage apps → Rằm and choose
+  <em>Delete hidden app data</em>. To withdraw the app's access, open your Google Account →
+  Security → Your connections to third-party apps and services, and remove Rằm.
 </p>
 
 <h2><span class="num">04</span>Permissions</h2>
@@ -179,6 +218,8 @@
     <tr><td>Location</td><td>Tag a diary entry with where you are</td><td>You tap the location button</td></tr>
     <tr><td>Notifications</td><td>Event, anniversary and diary reminders</td><td>You set your first reminder</td></tr>
     <tr><td>Biometrics</td><td>Unlock the diary with fingerprint or face</td><td>You enable the feature</td></tr>
+    <tr><td>Internet</td><td>Place names, Google Drive backup, ads, purchases, crash reports and usage statistics</td><td>Automatic (no prompt; Android grants it at install)</td></tr>
+    <tr><td>Google account access</td><td>Store a backup in the app's hidden Drive folder</td><td>You choose Google Drive backup; Google shows its own consent screen</td></tr>
   </tbody>
 </table>
 <p>
@@ -210,12 +251,33 @@
   This data is not linked to your identity.
 </p>
 
-<h3>No advertising, no purchases</h3>
+<h3>Google AdMob (advertising)</h3>
 <p>
-  This version of Fullmoon contains no advertising networks and no in-app purchases.
-  No advertising identifier is read, and no payment or billing data is handled at all.
-  If a future version introduces either, this policy will be updated before that version
-  is released.
+  The free version shows banner advertising provided by Google AdMob. To serve and measure ads,
+  Google may collect and use your device's advertising ID, IP address, device and app information,
+  and ad interactions. Rằm Pro removes all ads, and no ad is shown or loaded for Pro members.
+  Diary content, photos and locations are never shared with advertisers.
+</p>
+<p>
+  Where required by law (for example in the European Economic Area and the United Kingdom), the app asks for your
+  consent through Google's consent form before any ad data is collected, and you can change your choice in the
+  app's settings. You can also reset your advertising ID or turn off ad personalisation in Android
+  Settings → Google → Ads.
+</p>
+
+<h3>Google Play Billing (purchases)</h3>
+<p>
+  Rằm Pro is sold as a monthly or yearly subscription or as a one-time lifetime purchase, through Google Play.
+  Payment is processed entirely by Google, and we never receive or store your card or payment details.
+  The app receives only the purchase status needed to unlock Pro, and keeps a record of your active plan on the device.
+  Subscriptions are managed and can be cancelled at any time in Google Play → Payments &amp; subscriptions → Subscriptions.
+  Purchases are governed by the Google Play Terms of Service.
+</p>
+
+<h3>Google Drive (optional backup)</h3>
+<p>
+  Used only if you choose to back up to Google Drive; see the section on backup above for what is stored,
+  how it is protected and how to remove it. Google handles your sign-in and consent.
 </p>
 
 <h3>How long this data is kept</h3>
@@ -227,14 +289,14 @@
 
 <h3>Transmission security</h3>
 <p>
-  Both services transmit over HTTPS with TLS encryption. They are provided by Google and
+  All of these services transmit over HTTPS with TLS encryption. They are provided by Google and
   governed by the
   <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.
 </p>
 
 <h2><span class="num">06</span>Children</h2>
 <p>
-  Fullmoon is not directed at children under 13, and we do not knowingly collect data from children.
+  Rằm is not directed at children under 13, and we do not knowingly collect data from children.
   If you are a parent and believe your child has provided us with data, please get in touch —
   although, since the app has no accounts and stores nothing on a server, we hold no data to delete.
 </p>
@@ -242,9 +304,11 @@
 <h2><span class="num">07</span>Your rights</h2>
 <ul>
   <li><strong>View and edit your data</strong> — all of it lives in the app, where you can read and change it directly.</li>
-  <li><strong>Delete your data</strong> — delete individual entries in the app, or everything at once by uninstalling, or via Settings → Apps → Fullmoon → Storage → Clear data.</li>
+  <li><strong>Delete your data</strong> — delete individual entries in the app, or everything at once by uninstalling, or via Settings → Apps → Rằm → Storage → Clear data.</li>
   <li><strong>Withdraw permissions</strong> — revoke location or notification access at any time in system settings.</li>
   <li><strong>Stop sending diagnostics</strong> — uninstalling the app ends all crash reporting and analytics immediately; nothing further is sent.</li>
+  <li><strong>Delete your backups</strong> — delete backup files you saved yourself. For Google Drive, use <em>Delete hidden app data</em> as described above.</li>
+  <li><strong>Manage ads and purchases</strong> — change ad personalisation in Android Settings → Google → Ads, and cancel a subscription in Google Play.</li>
 </ul>
 <p>
   If you are in the European Union, the United Kingdom or California, you have additional rights
@@ -266,7 +330,7 @@
 <p>We aim to reply within 7 business days.</p>
 
 <footer>
-  <p style="margin:0">Fullmoon — Lunar Calendar &amp; Diary · Privacy Policy · 8 October 2026</p>
+  <p style="margin:0">Rằm — Lunar Calendar &amp; Diary · Privacy Policy · 15 October 2026</p>
 </footer>
 
 </div>
